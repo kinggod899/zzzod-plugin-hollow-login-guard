@@ -1,0 +1,20 @@
+{
+  "id": "hollow_login_guard",
+  "name": "防登录卡死贝果小助手",
+  "summary": "登录后若角色还在贝果等空洞玩法局内，自动退出玩法回到大世界，避免一条龙卡在登录阶段直到超时。插件会接管主程序的登录节点（运行时打补丁，不改动任何文件）。",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "author": {
+    "name": "kinggod899",
+    "url": "https://github.com/kinggod899"
+  },
+  "homepage": "https://github.com/kinggod899/zzzod-plugin-hollow-login-guard",
+  "risk": [
+    "automation"
+  ],
+  "compatibility": {
+    "minAppVersion": "0.0.0",
+    "minCoreApiVersion": 1,
+    "python": ">=3.11"
+  }
+}

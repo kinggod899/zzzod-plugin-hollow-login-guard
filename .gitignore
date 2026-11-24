@@ -1,0 +1,10 @@
+# 本地校验/打包工具（按需克隆）
+.plugin-tools/
+
+# 构建产物，由 Release 工作流生成
+dist/
+*.zip
+
+# Python 缓存
+__pycache__/
+*.pyc

@@ -1,0 +1,75 @@
+# 空洞类玩法（贝果计划、零号空洞等）局内常驻界面。
+# 登录后角色可能直接落在这个画面，登录流程只认大世界与已知弹窗，
+# 会把这种画面当成「未知画面」一直重试到超时。
+# 判定方式见 inside_screen.py；本文件只记录 1920x1080 坐标。
+screen_id: hollow_login_inside
+screen_name: 空洞登录-局内HUD
+pc_alt: false
+area_list:
+- area_name: 右上计时
+  pc_rect:
+  - 1768
+  - 44
+  - 1804
+  - 100
+- area_name: 普通攻击
+  pc_rect:
+  - 1403
+  - 916
+  - 1505
+  - 1017
+- area_name: 菜单-退出战斗
+  pc_rect:
+  - 1616
+  - 1006
+  - 1832
+  - 1052
+  area_type: text
+  text: 退出战斗
+  lcs_percent: 0.5
+- area_name: 退出确认-提示
+  id_mark: true
+  pc_rect:
+  - 695
+  - 525
+  - 1225
+  - 575
+  area_type: text
+  text: 仅保留安全箱内物资
+  lcs_percent: 0.7
+- area_name: 退出确认-确认
+  pc_rect:
+  - 977
+  - 615
+  - 1250
+  - 685
+  area_type: text
+  text: 确认
+  lcs_percent: 0.7
+- area_name: 结算-继续
+  pc_rect:
+  - 830
+  - 930
+  - 1090
+  - 1000
+  area_type: text
+  text: 继续
+  lcs_percent: 0.7
+- area_name: 仓库-放入仓库
+  pc_rect:
+  - 190
+  - 990
+  - 445
+  - 1060
+  area_type: text
+  text: 放入仓库
+  lcs_percent: 0.7
+- area_name: 仓库-返回研究站
+  pc_rect:
+  - 1600
+  - 991
+  - 1855
+  - 1060
+  area_type: text
+  text: 返回研究站
+  lcs_percent: 0.7
