@@ -144,7 +144,7 @@ def apply_patch() -> bool:
         if name not in state:
             fn = getattr(EnterGame, name, None)
             if fn is None:
-                log.warning('空洞登录退出补丁：EnterGame 没有节点 %s，跳过', name)
+                log.warning('防登录卡死补丁：EnterGame 没有节点 %s，跳过', name)
                 continue
             node = getattr(fn, 'operation_node_annotation', None)
             state[name] = getattr(node, 'op_method', None) or fn
@@ -157,7 +157,7 @@ def apply_patch() -> bool:
         applied.append(name)
 
     if not applied:
-        log.error('空洞登录退出补丁：没有可打的节点，插件未生效')
+        log.error('防登录卡死补丁：没有可打的节点，插件未生效')
         return False
-    log.info('空洞登录退出补丁已生效：%s', ', '.join(applied))
+    log.info('防登录卡死补丁已生效：%s', ', '.join(applied))
     return True
